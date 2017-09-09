@@ -21,7 +21,7 @@ final class Module_Helpdesk extends GDO_Module
     
     public function hookRightBar(GDT_Bar $bar)
     {
-        $bar->addField(GDT_Link::make()->href(href('Helpdesk', 'OpenTicket')));
+        $bar->addField(GDT_Link::make('link_helpdesk')->href(href('Helpdesk', 'OpenTicket')));
     }
     
 }
