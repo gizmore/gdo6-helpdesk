@@ -1,7 +1,7 @@
 <?php
 namespace GDO\Helpdesk;
 use GDO\Core\GDO_Module;
-use GDO\Template\GDT_Bar;
+use GDO\UI\GDT_Bar;
 use GDO\UI\GDT_Link;
 
 final class Module_Helpdesk extends GDO_Module

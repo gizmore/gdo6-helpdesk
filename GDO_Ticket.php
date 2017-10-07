@@ -5,7 +5,7 @@ use GDO\DB\GDT_AutoInc;
 use GDO\DB\GDT_CreatedAt;
 use GDO\DB\GDT_CreatedBy;
 use GDO\Date\GDT_DateTime;
-use GDO\Type\GDT_String;
+use GDO\DB\GDT_String;
 use GDO\User\GDT_User;
 use function foo\func;
 use GDO\Comment\CommentedObject;

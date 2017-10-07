@@ -8,7 +8,7 @@ use GDO\Form\GDT_Submit;
 use GDO\Form\GDT_AntiCSRF;
 use GDO\User\GDO_User;
 use GDO\Mail\Mail;
-use GDO\Type\GDT_Message;
+use GDO\UI\GDT_Message;
 use GDO\Comment\GDO_Comment;
 use GDO\Helpdesk\GDO_TicketMessage;
 use GDO\UI\GDT_Link;
