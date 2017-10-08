@@ -138,3 +138,18 @@ Lets break this hooking and fields and adding up!
 We will use the comments module to add message functionality to our helpdesk tickets.
 
 
+## 7. Optional Attachments
+
+We will add a config var to the module if we allow tickets to contain attachments.
+This is quite easily done by overloading getConfig in the module.
+
+    public function getConfig()
+    {
+      	return array(
+     		GDT_Checkbox::make('helpdesk_attachments')->initial('1'),
+     	);
+    }
+
+This will create a boolean with the default value set to yes.
+You can access your setting under Admin->Modules->Helpdesk->Configure.
+
