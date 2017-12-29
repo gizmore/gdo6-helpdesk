@@ -10,6 +10,7 @@ use GDO\User\GDT_User;
 use function foo\func;
 use GDO\Comment\CommentedObject;
 use GDO\User\GDO_User;
+use GDO\UI\GDT_Title;
 /**
  * Helpdesk ticket.
  * Use Comment module for messaging.
@@ -25,7 +26,7 @@ final class GDO_Ticket extends GDO
     {
         return array(
             GDT_AutoInc::make('ticket_id'),
-            GDT_String::make('ticket_title')->max(96),
+            GDT_Title::make('ticket_title')->max(96),
             # Customer
             GDT_CreatedAt::make('ticket_created_at'),
             GDT_CreatedBy::make('ticket_created_by'),

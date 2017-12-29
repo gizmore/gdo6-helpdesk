@@ -31,6 +31,7 @@ final class Module_Helpdesk extends GDO_Module
         $bar->addField(GDT_Link::make('link_helpdesk')->href(href('Helpdesk', 'OpenTicket')));
     }
  
+    ##############
     ### Config ###
     ##############
     public function getConfig()
@@ -39,5 +40,6 @@ final class Module_Helpdesk extends GDO_Module
     		GDT_Checkbox::make('helpdesk_attachments')->initial('1'),
     	);
     }
+    public function cfgAttachments() { return $this->getConfigValue('helpdesk_attachments'); }
     
 }

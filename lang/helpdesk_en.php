@@ -1,5 +1,9 @@
 <?php
 return array(
+'link_helpdesk' => 'Helpdesk',
+##################################################################
+'ft_helpdesk_openticket' => '[%s] Create Ticket',
+##################################################################
 'mail_subj_helpdesk_ticket_created' => '[%s] New Helpdesk Ticket',
 'mail_body_helpdesk_ticket_created' => '
 Hello %s,
