@@ -136,6 +136,7 @@ Lets break this hooking and fields and adding up!
 ## 6. Adding ticket message and attachments.
 
 We will use the comments module to add message functionality to our helpdesk tickets.
+Read about the comments module here: https://github.com/gizmore/gdo6-comment
 
 
 ## 7. Optional Attachments

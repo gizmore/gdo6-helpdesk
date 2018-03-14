@@ -27,9 +27,10 @@ final class OpenTicket extends MethodForm
             GDT_AntiCSRF::make(),
         ));
         
+        # Believe or not, removing this attachment field afterwards makes more clean code. 
         if (!Module_Helpdesk::instance()->cfgAttachments())
         {
-            $form->removeField('');
+            $form->removeField('comment_file');
         }
     }
     

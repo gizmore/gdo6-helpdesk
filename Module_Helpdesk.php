@@ -41,5 +41,5 @@ final class Module_Helpdesk extends GDO_Module
     	);
     }
     public function cfgAttachments() { return $this->getConfigValue('helpdesk_attachments'); }
-    
+
 }
