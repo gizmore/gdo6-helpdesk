@@ -10,6 +10,11 @@ final class Module_Helpdesk extends GDO_Module
 	##############
 	### Module ###
 	##############
+	public function getDependencies()
+	{
+		return ['Comment'];
+	}
+	
     public function onLoadLanguage()
     {
         $this->loadLanguage('lang/helpdesk');
