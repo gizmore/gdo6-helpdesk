@@ -119,19 +119,17 @@ Now we load the file within the module
 ## 5. Hook into sidebar.
 
 Let us hook the OpenTicket method into the right sidebar.
-In the default template, a hooks are called for the 4 sidebars. hookLeftBar, hookRightBar, hookTopBar, hookBottomBar.
+GDO_Module::onInitSidebar() is the right place to do so.
 By convention, the left bar is for content, and the right bar for private functions.
 I think opening a ticket is more a private function, so lets hook there.
 
     File: Module_Helpdesk.php(https://)
     
-    public function hookRightBar(GDT_Bar $bar)
+    public function onInitSidebar()
     {
+    	  $bar = GDT_Page::$INSTANCE->rightNav;
         $bar->addField(GDT_Link::make('link_helpdesk_open_ticket')->href(href('Helpdesk', 'OpenTicket')));
     }
-    
-Lets break this hooking and fields and adding up!
-
 
 ## 6. Adding ticket message and attachments.
 
