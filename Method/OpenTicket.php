@@ -23,9 +23,9 @@ final class OpenTicket extends MethodForm
             $tickets->gdoColumn('ticket_title'),
             GDT_Message::make('comment_message'),
             GDT_File::make('comment_file'),
-            GDT_Submit::make(),
             GDT_AntiCSRF::make(),
         ));
+        $form->actions()->addField(GDT_Submit::make());
         
         # Believe or not, removing this attachment field afterwards makes more clean code. 
         if (!Module_Helpdesk::instance()->cfgAttachments())
