@@ -1,5 +1,8 @@
 <?php
 return array(
+'cfg_helpdesk_attachments' => 'Allow attachments?',
+'cfg_hook_right_bar' => 'Hook into right menu bar?',
+##################################################################
 'link_helpdesk' => 'Helpdesk',
 ##################################################################
 'ft_helpdesk_openticket' => 'Create Ticket',
